@@ -1,0 +1,600 @@
+/* Import Google Font CDN link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+body{
+    margin: 0 auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Menu */
+nav{
+    position: fixed;
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0 auto;
+    padding: 20px 0px;
+    transition: all 0.4s ease;
+}
+
+nav.sticky{
+    padding: 13px 0;
+    background: #161e25;
+}
+
+nav .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav .navbar .logo a{
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #161e25;
+}
+
+nav.sticky .navbar .logo a, nav.sticky .navbar .menu li a, nav.sticky .navbar .icons a{
+    color: #fff;
+}
+
+nav .navbar .menu{
+    display: flex;
+}
+
+nav .navbar .menu li{
+    margin: 0 10px;
+    list-style: none;    
+}
+
+.navbar .menu li a{
+    font-size: 21px;
+    font-size: 500;
+    text-decoration: none;
+    color: #161e25;
+    transition: all 0.3s ease;
+}
+
+
+.navbar .menu li a:hover{
+    color: #4070f4;
+}
+nav.sticky .navbar .menu li a:hover{
+    color: #4070f4;
+}
+
+nav .sidebar-button, nav .cancel-button{
+    display: none;
+}
+
+nav .navbar .icons a{
+    font-size:22px;
+    color: #161e25;
+    padding: 0 10px;
+}
+
+/* Home */
+.home{
+    background: url(../images/bg2.jpg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Ubuntu", sans-serif;
+    color:#000;
+}
+
+.home .home-content{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home .home-content .text-one{
+    font-size: 47px;
+    font-weight: 600;
+}
+
+.home .home-content .text-two{
+    font-size: 25px;
+    padding-top: 30px;
+    margin: 0px 5;
+}
+
+.home .hire-button{
+    padding-top: 40px;
+}
+
+.home .hire-button button{
+    outline:none;
+    font-size:23px;
+    font-weight: 500;
+    padding: 8px 16px;
+    background:#161e25;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+.home .hire-button button a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.home .hire-button button:hover{
+    background:rgb(230, 230, 230);
+    border-color: #333;
+}
+
+.home .hire-button button a:hover{
+    color:#333;
+}
+
+/* About */
+
+.about{
+    background: #161e25;
+}
+
+
+.about .about-content{
+    width: 80%;
+    margin: 0px auto;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.about .about-title{
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+    margin-bottom:60px;
+    font-size: 30px;
+    font-weight: 600;
+    color:#fff;
+    text-decoration: underline 2px;
+    text-underline-position: under;
+}
+
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .about-details .about-left-content{
+    width:45%;
+}
+
+.about .about-details .about-left-content img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.about .about-details .about-right-content{
+    width:55%;
+    color:#fff;
+}
+
+.about-details .about-right-content .topic{
+    font-size: 27px;
+    font-weight: 500;
+    color:#fff;
+    padding-bottom: 40px;
+}
+
+.about-details .about-right-content p{
+    text-align: justify;
+}
+
+.about-right-content .cv-button{
+    padding-top: 50px;
+}
+
+.about-right-content .cv-button button{
+    outline:none;
+    font-size:23px;
+    font-weight: 500;
+    padding: 8px 16px;
+    background:#4070f4;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+.about-right-content .cv-button button a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.about-right-content .cv-button button:hover{
+    background:#fff;
+    border-color: #333;
+}
+
+.about-right-content .cv-button button a:hover{
+    color:#4070f4;
+}
+
+/* Skills */
+
+.skills-content{
+    width:100%;
+    height:500px;
+    background:#fefefe;
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+}
+
+.skills-title{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+    margin-bottom:60px;
+    color:#161e25;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.box{
+    width: 250px;
+    display:inline-block;
+    border: 3px solid #161e25;
+    background:#161e25;
+    color:#fff;
+    padding:20px;
+    margin:10px;
+    border-radius:8px;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+.box h1{
+    margin-top: -5px;
+    font-size:20px;
+}
+
+.box i{
+    font-size:36px;
+    color:#4070f4;
+}
+
+/* Projects */
+
+.projects{
+    background: #161e25;
+}
+
+
+.projects .projects-content{
+    width: 80%;
+    margin: 0px auto;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.projects .projects-title{
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+    margin-bottom:60px;
+    font-size: 30px;
+    font-weight: 600;
+    color:#fff;
+    text-decoration: underline 2px;
+    text-underline-position: under;
+}
+
+.projects .projects-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects .projects-details .projects-left-content{
+    width:45%;
+}
+
+.projects-left-content .video iframe{
+    border-radius:10px;
+    margin-bottom: 50px;
+    border-color:#161e25;
+}
+
+.projects .projects-details .projects-right-content{
+    width:55%;
+    color:#fff;
+    text-align: justify;
+    padding-bottom: 100px;
+}
+
+.projects-right-content .hire-button{
+    padding-top: 100px;
+}
+
+.projects-right-content .hire-button button{
+    outline:none;
+    font-size:23px;
+    font-weight: 500;
+    padding: 8px 16px;
+    background:#4070f4;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+.projects-right-content .hire-button button a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.projects-right-content .hire-button button:hover{
+    background:#fff;
+    border-color: #333;
+}
+
+.projects-right-content .hire-button button a:hover{
+    color:#4070f4;
+}
+
+/* Contact */
+.contact{
+    background: #f0f8ff;
+}
+
+.contact .contact-content{
+    width: 90%;
+    margin: 0px auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-content .topic{
+    font-size: 27px;
+    font-weight: 500;
+    color:#161e25;
+    padding-bottom: 40px;
+    margin-left: 200px;
+}
+
+.contact .contact-title{
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+    margin-bottom:60px;
+    font-size: 30px;
+    font-weight: 600;
+    color:#161e25;
+    text-decoration: underline 2px;
+    text-underline-position: under;
+}
+
+.contact .contact-btn{
+    width: 200px;
+    height: 60px;
+    margin: 90px;
+    outline:none;
+    font-size:23px;
+    font-weight: 500;
+    padding: 8px 16px;
+    background:#161e25;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+.contact .contact-btn i{
+    font-size: 36px;
+    color:#4070f4;
+}
+
+/* Footer */
+footer{
+    background: #161e25;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size:12px;
+    height:40px;
+}
+
+/* Scroll Button */
+
+.scroll-button i{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding: 10px 12px;
+    background:#4070f4;
+    color: #fff;
+    font-size:20px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+/* Custom Scroll Bar */
+
+::webkit-scrollbar{
+    width:10px;
+}
+
+::webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::webkit-scrollbar-thumb{
+    background:#6e93f7;
+    border-radius:12px;
+}
+
+::webkit-scrollbar-thumb:hover{
+    background:#4070f4;
+    border-radius:12px;
+}
+
+/* Responsive Sidebar button configs*/
+nav .sidebar-button, .navbar .cancel-button{
+    position:absolute;
+    color:#fff;
+    font-size: 22px;
+    right: 30px;
+    top: 20px;
+}
+
+nav .sidebar-button{
+    color:#161e25;
+}
+
+nav.sticky .sidebar-button{
+    color:#fff;
+}
+
+nav.sticky .navbay .menu li a:hover{
+    color:#4070f4;
+}
+
+/* Responsive */
+@media (max-width: 1190px){
+
+    .about .about-content{
+        width: 85%;
+    }
+
+    .projects .projects-content{
+        width: 85%;
+    }
+}
+
+@media (max-width: 1090px){
+
+    .about .about-details{
+        flex-direction:column;
+    }
+
+    .about .about-details .about-left-content{
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .about .about-details .about-right-content{
+        width:90%;
+        margin:40px 0;
+    }
+
+    .projects .projects-details{
+        flex-direction:column;
+    }
+
+    .projects .projects-details .projects-left-content{
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .projects .projects-details .projects-right-content{
+        width:90%;
+        margin:40px 0;
+    }
+}
+
+@media (max-width: 970px){
+    
+    .about .about-details .about-left-content img{
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 50px;
+    }
+
+    .projects .projects-details .projects-left-content iframe{
+        height: 180px;
+        width:300px;
+    }
+}
+
+@media (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    /* Menu */
+    nav .navbar .menu{
+        position: absolute;
+        left: -115%;
+        top: -24px;
+        height:100vh;
+        max-width: 400px;
+        width:100%;
+        background-color: #161e25;
+        flex-direction:column;
+        align-items: center;
+        padding-top: 60px;
+        transition: all 0.5s ease;
+    }
+
+    nav .sidebar-button, nav .cancel-button{
+        display: inline;
+    }
+
+    nav .navbar.active .menu{
+        left: -60px;
+    }
+
+    .navbar .menu li a{
+        color: #fff;
+        display: block;
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    nav .navbar .icons a{
+        display: none;
+    }
+
+    /* Home */
+    .home .home-content .text-one{
+        font-size: 41px;
+    }
+    .home .home-content .text-two{
+        font-size: 21px;
+    }
+
+    /* Skills */
+    .skills-content{
+        height:1200px;
+    }
+    
+
+    /* Contact */
+    .contact .topic{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        margin-left:0px;
+    }
+
+    .contact .contact-btn{
+        width: 100%;
+        margin:20px 0;
+    }
+
+
+}
+
+
