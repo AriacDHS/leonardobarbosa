@@ -368,7 +368,6 @@ nav .navbar .icons a{
     font-weight: 500;
     color:#161e25;
     padding-bottom: 40px;
-    margin-left: 200px;
 }
 
 .contact .contact-title{
@@ -381,6 +380,11 @@ nav .navbar .icons a{
     color:#161e25;
     text-decoration: underline 2px;
     text-underline-position: under;
+}
+
+.buttons{
+    
+    display:flex;
 }
 
 .contact .contact-btn{
