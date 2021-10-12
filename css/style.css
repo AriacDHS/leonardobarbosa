@@ -78,6 +78,7 @@ nav .navbar .icons a{
     padding: 0 10px;
 }
 
+
 /* Home */
 .home{
     background: url(../images/bg2.jpg) no-repeat;
@@ -241,7 +242,6 @@ nav .navbar .icons a{
 }
 
 .skills-title{
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     padding-top:20px;
